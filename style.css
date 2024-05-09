@@ -9,9 +9,9 @@ body{
     color:white;
 }
 #header{
-    width: 100px; ;
-    height: 100vh;
-    background-image: 'url(/slide.png)';
+    width: 1000px; ;
+    height: 1000px;
+    background-image: url('slide.png');
     background-size: cover;
     background-position: center;
 }

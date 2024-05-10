@@ -9,12 +9,14 @@ body{
     color:white;
 }
 #header{
-    width: 100%; ;
-    height:200vh;
-    background-image: url('slide.png');
+
     background-size: cover;
     background-position: center;
-    padding-top: 50px;
+}
+.image
+{
+    margin-left : 55%;
+    margin-top: 3%;
 }
 .container{
     padding: 10px 10%;

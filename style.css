@@ -165,24 +165,26 @@ width: 20%;
     background: #ff004f;
     transform: translateY(-10px);
 }
-#portfolio{
+#portfolio {
     padding: 50px 0;
-}
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+ }
+ 
+ .worklist {
+    display: flex;
+    flex-wrap: nowrap; 
     margin-top: 50px;
-}
-
-.work {
+ }
+ 
+ .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-}
-
-.work img {
+    margin-right: 20px; 
+ }
+ 
+ .work img {
     width: 100%;
     border-radius: 10px;
     display: block;
-}
+ }
+ 

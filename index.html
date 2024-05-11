@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2e6d7356d.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id="header" >
@@ -33,5 +34,113 @@
 
    </div>
 
+
+   <div class="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-tittle"> About me</h1>
+               <p> lorem ipbus khssk ksddkk  dknkhik odnlffnnlfj jfoifnlk kddodldo wokddkwdp
+                  bbjfe nie kfwwf nfedj wfjoweme kmdlwj nd k,wnnllj llmoh gdwkqqyy khwdwm  bkqh
+                  kn,w knekneiu kfennni knnfwm okwlj llwnw fbbwif  lwnnqm nkw wnwm kwhw 
+               </p>
+
+               <div class="tab-tittles">
+                  <p class="tab-links active-link" onclick="opentab('skills')"> skills</p>
+                  <p class="tab-links" onclick="opentab('experience')"> experience</p>
+                  <p class="tab-links" onclick="opentab('education')"> education</p>
+               </div>
+               <div class="tab-contents active-link" id="skills">
+                  <ul> 
+                     <li> <span> UI/UX</span> </li><br> desinging web/app interfaces</li>
+                     <li> <span> web development</span> </li><br>  web app development</li>
+                     <li> <span> APP development</span> </li><br> building android/ios apps</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul> 
+                     <li> <span> 2021-current</span> </li><br> UI/UX designer at tesla</li>
+                     <li> <span> 2017-2021</span> </li><br> team leader at start app LLC</li>
+                     <li> <span> 2016-2017</span> </li><br> intership at ekart commerce</li>
+                  </ul>
+            </div> <div class="tab-contents" id="education">
+               <ul> 
+                  <li> <span> 2016-2016</span> </li><br>UI/UX design training at ET institue  </li>
+                  <li> <span> 2016-2016</span> </li><br> MBA FROM MIT BANGALORE</li>
+                  <li> <span> 2014-2016</span> </li><br> BBA FROM ISM BANGALORE</li>
+               </ul>
+         </div>
+      </div>
+   </div>
+   <div id="services">
+      <div class="container">
+         <h1 class="sub-tittle"> my services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h2> web desgin</h2>
+               <p> lorem ipsum dolor sit amet,consectuar adipscing elict.sed nulla nibha,
+                  tinduclt sit amet sapiean quis.</p>
+               <a href="#"> learn more</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-sitemap"></i>
+               <h2> UI/UX desgin</h2>
+               <p> lorem ipsum dolor sit amet,consectuar adipscing elict.sed nulla nibha,
+                  tinduclt sit amet sapiean quis.</p>
+               <a href="#"> learn more</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-store"></i>
+               <h2> APP desgin</h2>
+               <p> lorem ipsum dolor sit amet,consectuar adipscing elict.sed nulla nibha,
+                  tinduclt sit amet sapiean quis.</p>
+               <a href="#"> learn more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="portfolio">
+      <div class="container"></div>
+      <h2 class="sub-tittle"> my work </h2>
+      <div class="worklist">
+         <div class="work">
+            <img src="images/work-1.png" >
+         </div>
+         <div class="work">
+            <img src="images/work-2.png" >
+         </div>
+         <div class="work">
+            <img src="images/work-3.png" >
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
 </body>
 </html>

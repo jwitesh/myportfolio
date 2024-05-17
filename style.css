@@ -4,6 +4,9 @@
     font-family: "poppins",sans-serif;
     box-sizing: border-box;
 }
+.html{
+scroll-behavior: smooth;
+}
 body{
     background-color:black;
     color:white;
@@ -40,9 +43,23 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
 }
 nav img{
 
@@ -186,5 +203,122 @@ width: 20%;
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
  }
- 
+ .layer{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0px 20px;
+    text-align: center;
+    font-size: 14px;
+    transition:height 0.5s;
+ }
+ .layer h3{
+    font-weight: 5000;
+    margin-bottom: 20px;
+
+ }
+ .layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+ }
+ .work:hover img{
+    transform:scale(1.1) ;
+ }
+ .work:hover .layer{
+    height: 100%;
+
+ }
+ .btn{
+    text-decoration: none;
+    padding: 14px 50px;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    border-radius: 6px;
+    color: #fff;
+    transition: background 0.5s;
+    display: inline-block;
+
+ }
+ .btn:hover{
+    background: #ff004f;
+}
+ .contact-left{ 
+      flex-basis: 35%;
+ }
+ .flex-right{
+    flex-basis: 60%;
+ }
+ .contact-left p{
+    margin-top:30px ;
+
+ }
+ .contact-left p i{
+    color:#ff004f;
+     margin-right: 15px;
+     font-size: 25px;
+ }
+ .social-icons{
+    margin-top: 30px;
+ }
+ .social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    margin-right: 15px;
+    color:#ababab;
+    display:inline-block;
+    transition: transform 0.5s;
+ }
+ .social-icons a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+ }
+ .btn.btn2{
+    background: #ff004f;
+    display: inline-block;
+ }
+ .contact-right{
+    width: 100%;
+ }
+ form input,form textarea{
+    width: 100%;
+    border: o;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    
+ }
+ .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px  0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+ }
+ @media only screen and (max-width: 600px){
+    
+ }

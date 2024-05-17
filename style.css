@@ -18,11 +18,16 @@ body{
 }
 .image
 {
-    margin-left : 75%;
+    margin-left : 69%;
     width: 10%;
-    margin-top: -270px;
-    width: 100px;
+    margin-top: -350px;
     
+    
+}
+.about-col-1{
+    width: 200%;
+    height: 350px;
+    margin-top: 80px;
 }
 .container{
     padding: 10px 10%;
@@ -133,7 +138,7 @@ width: 20%;
 .tab-contents ul li{
  list-style: none;
  margin: 10px o;
-}
+ }
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
